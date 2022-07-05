@@ -19,6 +19,7 @@
         android:text="Máy tính bỏ túi" />
 
     <EditText
+        android:drawablePadding="5dp"
         android:drawableStart="@drawable/ic_input_1"
         android:maxLength="5"
         android:digits="0123456789."
@@ -27,4 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_input_2"
+        android:maxLength="5"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
