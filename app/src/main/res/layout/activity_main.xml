@@ -19,6 +19,7 @@
         android:text="Máy tính bỏ túi" />
 
     <EditText
+        android:id="@+id/edit_text_number_1"
         android:drawablePadding="5dp"
         android:drawableStart="@drawable/ic_input_1"
         android:maxLength="5"
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
+        android:id="@+id/edit_text_number_2"
         android:layout_margin="5dp"
         android:layout_marginTop="10dp"
         android:drawablePadding="5dp"
@@ -40,6 +42,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/text_view_ket_qua"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
@@ -56,12 +59,14 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/button_cong"
             android:textSize="25sp"
             android:text="+"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/button_tru"
             android:layout_marginStart="100dp"
             android:textSize="25sp"
             android:text="-"
@@ -76,12 +81,14 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/button_nhan"
             android:textSize="25sp"
             android:text="x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/button_chia"
             android:layout_marginStart="100dp"
             android:textSize="25sp"
             android:text="/"
