@@ -19,7 +19,7 @@
         android:text="Máy tính bỏ túi" />
 
     <EditText
-        android:id="@+id/edit_text_number_1"
+        android:id="@+id/edit_text_so_thu_1"
         android:drawablePadding="5dp"
         android:drawableStart="@drawable/ic_input_1"
         android:maxLength="5"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/edit_text_number_2"
+        android:id="@+id/edit_text_so_thu_2"
         android:layout_margin="5dp"
         android:layout_marginTop="10dp"
         android:drawablePadding="5dp"
