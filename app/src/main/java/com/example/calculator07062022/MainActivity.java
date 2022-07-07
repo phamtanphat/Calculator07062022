@@ -53,7 +53,38 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     tvKetQua.setText(String.valueOf(ketQua));
                 }
+            }
+        });
 
+        btnChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String textSoThu1 = edtSoThu1.getText().toString();
+                String textSoThu2 = edtSoThu2.getText().toString();
+
+                if (textSoThu1.isEmpty() || textSoThu2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Bạn chưa truyền đủ thông tin", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                float numberSoThu1 = Float.parseFloat(textSoThu1);
+                float numberSoThu2 = Float.parseFloat(textSoThu2);
+
+                if (numberSoThu2 == 0) {
+                    Toast.makeText(MainActivity.this, "Không thực phép chia cho số 0", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                float ketQua = numberSoThu1 / numberSoThu2;
+
+                // Nếu chia hết cho 1 sẽ là kiểu int và ngược lại
+                boolean isInteger = ketQua % 1 == 0;
+
+                if (isInteger) {
+                    tvKetQua.setText(String.valueOf((int) ketQua));
+                } else {
+                    tvKetQua.setText(String.valueOf(ketQua));
+                }
             }
         });
     }
