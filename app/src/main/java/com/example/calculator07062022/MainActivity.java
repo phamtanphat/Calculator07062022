@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 if (isInteger) {
                     tvKetQua.setText(String.valueOf((int) ketQua));
                 } else {
-                    tvKetQua.setText(String.valueOf(ketQua));
+                    tvKetQua.setText(String.format("%.2f", ketQua));
                 }
             }
         });
